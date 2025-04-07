@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-1: orange;
+	--bg-2: silver;
+}
+
+button {
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	color: white;
+	border: none;
+}
+
+button svg {
+	width: 1rem;
+	height: 1rem;
+	fill: currentColor;
+}
+
+#app {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header, nav, article, aside, footer {
+	padding: 1rem;
+}
+
+main {
+	flex: 1;
+	display: flex;
+}
+
+nav, aside {
+	min-width: 20%;
+}
+
+article {
+	flex: 1;
+	background: white;
+}
+
+header, footer {
+	transition: background 1s cubic-bezier(0.22, 1, 0.36, 1);
+	background: var(--bg-1);
+}
+
+nav, aside {
+	transition: background 1s cubic-bezier(0.22, 1, 0.36, 1);
+	background: var(--bg-2);
+}
